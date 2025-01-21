@@ -115,8 +115,8 @@ best9 = which.min(cross.entropy(projectalpha, K = 9))
 best9
 best10 = which.min(cross.entropy(projectalpha, K = 10))
 best10
-##creating admixture plots. For this, you need to first create a new folder (All_Qfiles) and move the Q files with "best" entropies from the LEA runs into it. 
-sfiles <- list.files(path=("./All_Qfiles"), full.names=T)
+##creating admixture plots. For this, you need to first create a new folder (Qfiles) and move the Q files with "best" entropies from the LEA runs into it. 
+sfiles <- list.files(path=("./Qfiles"), full.names=T)
 slist <- readQ(files=sfiles)
 plotQ(qlist = slist[2], imgtype = "pdf",
       height = 1.5, 
